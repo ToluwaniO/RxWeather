@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="horizontal"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content" android:padding="16dp">
+
+    <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" app:srcCompat="@drawable/weather" android:id="@+id/weatherIconView"
+    />
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" android:layout_weight="1" android:paddingLeft="8dp">
+        <TextView
+                android:text="Tomorrow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/dayView"
+                android:textColor="@android:color/black" android:textSize="24sp"/>
+        <TextView
+                android:text="Clear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/weatherView" android:textSize="18sp"/>
+    </LinearLayout>
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" android:layout_weight="1" android:paddingLeft="8dp">
+        <TextView
+                android:text="25°c"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/temperatureHighView"
+                android:textColor="@android:color/black" android:textSize="24sp" android:textAlignment="center"/>
+        <TextView
+                android:text="12°c"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/temperatureLowView" android:textSize="18sp"
+                android:textAlignment="center"/>
+    </LinearLayout>
+</LinearLayout>

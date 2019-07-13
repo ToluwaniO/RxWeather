@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content" android:background="@color/colorPrimary">
+
+    <TextView
+            android:text="Tuesday April 12, 2019"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/dateView" android:textSize="30sp"
+            android:textColor="@android:color/white" android:padding="16dp"/>
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" android:padding="16dp">
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:layout_weight="1">
+            <TextView
+                    android:text="21°c"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:id="@+id/temperatureHighView" android:textSize="60sp"
+                    android:textColor="@android:color/white" android:textAlignment="center"/>
+            <TextView
+                    android:text="11°c"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:id="@+id/temperatureLowView" android:textSize="36sp"
+                    android:textColor="@android:color/white" android:textAlignment="center"/>
+        </LinearLayout>
+        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" app:srcCompat="@drawable/rainy_3" android:id="@+id/weatherIconView"
+                android:layout_weight="1" android:layout_gravity="center_vertical|fill_vertical"
+                android:foregroundGravity="center_vertical|fill_vertical"/>
+    </LinearLayout>
+</LinearLayout>
